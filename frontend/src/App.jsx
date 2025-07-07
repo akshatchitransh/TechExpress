@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from './components/ui/button'
 
 const App = () => {
   return (
@@ -6,6 +7,8 @@ const App = () => {
         <h1 class="text-3xl font-bold underline bg-red-300">
     Hello world!
   </h1>
+   <Button className= ""variant= "ghost">Click me</Button>
+   
     </div>
   )
 }
