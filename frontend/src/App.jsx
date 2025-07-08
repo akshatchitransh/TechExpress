@@ -7,17 +7,19 @@ import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import About from './pages/About'
 import NewsArticle from './pages/NewsArticle'
+import Header from './components/shared/Header'
 
 const App = () => {
   return (
     <BrowserRouter>
+    <Header/>
       <Routes>
-        <Route path='/signin' element={<SignInForm />} />
-        <Route path='/signup' element={<SignUpForm />} />
+        <Route path='/sign-in' element={<SignInForm />} />
+        <Route path='/sign-up' element={<SignUpForm />} />
         <Route path='/' element={<Home />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/about' element={<About />} />
-        <Route path='/news-articles' element={<NewsArticle />} />
+        <Route path='/news' element={<NewsArticle />} />
       </Routes>
     </BrowserRouter>
   )
