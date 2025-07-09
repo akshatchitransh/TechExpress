@@ -1,8 +1,9 @@
    import bcryptjs from "bcryptjs"
    import mongoose from "mongoose"
   import User from "../models/user.model.js"
+import { errorHandler } from "../utils/error.js"
 
-   export const signup = async (req, res) => {
+   export const signup = async (req, res , next) => {
 
     const { username, email, password } = req.body
 
@@ -14,7 +15,7 @@
         email === "" ||
         password === ""
     ) {
-        return res.status(400).json({message : "all fields required"})
+        return next(errorHandler(400, "All fields are required"))
     }
 
 
@@ -31,7 +32,7 @@
 
     res.json("Signup successful")
   } catch (error) {
-    return res.status(400).json({message : "err.message"})
+   next(error)
   }
 
     }
