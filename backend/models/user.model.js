@@ -15,15 +15,8 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
-    },
-    profilePicture: {
-      type: String,
-      default: "https://cdn-icons-png.flaticon.com/128/3177/3177440.png",
-    },
-    isAdmin: {
-      type: Boolean,
-      default: false,
-    },
+    }
+    
   },
   { timestamps: true }
 )
