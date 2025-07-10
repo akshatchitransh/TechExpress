@@ -1,5 +1,6 @@
 import { Route } from 'react-router-dom'
 import React from 'react'
+import { Toaster } from "@/components/ui/sonner"
 import { BrowserRouter, Routes } from 'react-router-dom'
 import SignInForm from './auth/forms/SignInForm'
 import SignUpForm from './auth/forms/SignUpForm'
@@ -21,7 +22,11 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/news' element={<NewsArticle />} />
       </Routes>
+
+      <Toaster />
     </BrowserRouter>
+
+    
   )
 }
 
