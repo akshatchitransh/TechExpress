@@ -50,7 +50,7 @@ const Footer = () => {
           <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
 
           <p className="text-gray-400 text-sm">
-            NTB IIIT Bhopal 
+            NTB IIIT Bhopal -
           </p>
 
           <p className="text-gray-400 text-sm">Email: akshat.chitransh3108@gmail.com</p>
