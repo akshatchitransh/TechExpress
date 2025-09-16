@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* About Us */}
+      
         <div>
           <h2 className="text-lg font-semibold mb-4">About Us</h2>
           <p className="text-gray-400 text-sm">
@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
+       
         <div>
           <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
 
@@ -45,7 +45,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Us */}
+        
         <div>
           <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
 
@@ -59,25 +59,26 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Social Media and Copyright */}
+     
       <div className="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
-        <p>Follow us on:</p>
+        <p>Follow me on:</p>
 
         <div className="flex justify-center space-x-4 mt-3">
-          <a href="#" className="hover:text-white">
-            Facebook
-          </a>
+         
 
-          <a href="#" className="hover:text-white">
-            Twitter
-          </a>
-
-          <a href="#" className="hover:text-white">
+          <a href="https://www.linkedin.com/in/geekyakshat/" className="hover:text-white">
             LinkedIn
           </a>
 
           <a href="#" className="hover:text-white">
             Instagram
+          </a>
+
+           <a href="#" className="hover:text-white">
+            GitHub
+          </a>
+           <a href="#" className="hover:text-white">
+            Twitter
           </a>
         </div>
 
